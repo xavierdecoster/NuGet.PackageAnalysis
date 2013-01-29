@@ -13,7 +13,7 @@ My first package analysis rule is a very simple yet important one: verify whethe
 
 As NuGet (currently version 2.2) does not fully support this Spec (yet - until SemVer hits RTM), this Package Analysis Rule can only check for violations **AFTER** NuGet created an instance of the *SemanticVersion* class internally before reaching the validation logic. This means I can't (yet) built the checks for the SemVer build number annotation.
 
-![Semantic Version Rule](xavierdecoster.github.com/NuGet.PackageAnalysis.SemVer/blob/master/Images/SemanticVersionRule.png)
+![Semantic Version Rule](/NuGet.PackageAnalysis.SemVer/blob/master/Images/SemanticVersionRule.png)
 
 *Please note: NuGet currently still ignores the PackageIssueLevel.Error and traces a warning instead. As soon as NuGet supports this you'll notice package creation will fail (no need to update this assembly as it already uses the Error level).*
 
