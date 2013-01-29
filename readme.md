@@ -20,6 +20,8 @@ As NuGet (currently version 2.2) does not fully support this Spec (yet - until S
 Deploying the Package Analysis Rules
 ------------------------------------
 Simply download the binaries and drop them in the `%localappdata%\nuget\commands` directory
+* [NuGet.PackageAnalysis.SemVer.dll][3]
 
 [1]:http://blog.nuget.org/20121023/creating-custom-package-rules-for-your-build.html
 [2]:http://semver.org
+[3]:https://github.com/xavierdecoster/NuGet.PackageAnalysis/raw/master/Drops/NuGet.PackageAnalysis.SemVer.dll
