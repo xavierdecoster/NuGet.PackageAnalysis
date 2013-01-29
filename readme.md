@@ -9,13 +9,13 @@ In this repository I'll track some of my own custom rules. They are provided AS 
 SemanticVersionRule
 -------------------
 
-My first package analysis rule is a very simple yet important one: verify whether the package being created has been given a proper Semantic Version compliant without violating the official Specification available at [http://semver.org][2].
+My first package analysis rule is a very simple yet important one: verify whether the package being created has been given a proper Semantic Version that doesn't violate the official Specification available at [http://semver.org][2].
 
-As NuGet (currently version 2.2) does not fully support this Spec (yet - until SemVer hits RTM), this Package Analysis Rule can only check for violations **AFTER** NuGet created an instance of the *SemanticVersion* class internally before reaching the validation logic. This means I can't (yet) built the checks for the SemVer build number annotation.
+As NuGet (currently version 2.2) does not fully support this Spec (yet - at least until SemVer hits RTM), this Package Analysis Rule can only check for violations **AFTER** NuGet created an instance of the *SemanticVersion* class internally - before reaching the validation logic. This means I can't (yet) built the checks for the SemVer build number annotation.
 
 ![Semantic Version Rule](https://raw.github.com/xavierdecoster/NuGet.PackageAnalysis/master/Images/SemanticVersionRule.png)
 
-*Please note: NuGet currently still ignores the PackageIssueLevel.Error and traces a warning instead. As soon as NuGet supports this you'll notice package creation will fail (no need to update this assembly as it already uses the Error level).*
+*Please note: NuGet currently still ignores the PackageIssueLevel.Error and traces a warning instead. As soon as NuGet supports this you'll notice package creation will fail using this SemanticVersionRule (no need to update this assembly as it already uses the Error level).*
 
 Deploying the Package Analysis Rules
 ------------------------------------
