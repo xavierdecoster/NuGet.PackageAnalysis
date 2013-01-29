@@ -1,7 +1,7 @@
 NuGet Package Analysis Rules
 ============================
 
-Just like with Code Analysis, NuGet package creation can be guarded by a set of Package Analysis Rules.
+Just like Code Analysis guards code, NuGet package creation can be guarded by a set of Package Analysis Rules.
 For a walkthrough on how to create these yourself, I'd recommend you to check out the NuGet Team blog: [http://blog.nuget.org/20121023/creating-custom-package-rules-for-your-build.html][1]
 
 In this repository I'll track some of my own custom rules. They are provided AS IS, but feel free to file an issue or submit a pull request if you hit something unexpected or want to contribute.
